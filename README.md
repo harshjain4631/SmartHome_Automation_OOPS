@@ -1,187 +1,83 @@
-🏠 Smart Home Automation System (Java)
+# 🏠 Smart Home Automation System (Java)
 
-A Java Swing–based Smart Home Automation System implementing role-based access control, device automation, and scheduling using Object-Oriented Programming principles.
+A **Java Swing–based smart home automation application** featuring role-based access control, device automation, and scheduling, built using Object-Oriented Programming principles.
 
-🚀 Project Highlights
+---
 
-Role-based authentication (Admin / User)
+## 🚀 Features
 
-GUI-driven device control using Java Swing
+* Secure login with **Admin / User roles**
+* GUI-based control using **Java Swing**
+* Device automation & scheduling
+* Modular, extensible OOP design
 
-Automation & scheduling for smart devices
+---
 
-Modular, extensible OOP design
+## 💡 Supported Devices
 
-Real-world simulation of smart home functionality
+* **Light:** On/Off, brightness, motion activation, color control
+* **Fan:** On/Off, speed control (1–5)
+* **Air Conditioner:** Temperature (16–30°C), modes, energy-saving, auto-adjust
+* **Security System:** Arm/Disarm, Home/Away modes, motion detection, alarms, logs
 
-✨ Features
-🔐 Authentication & Authorization
+---
 
-Secure login for all users
+## 🤖 Automation & Scheduling
 
-Admin
+* Motion-based lighting
+* Time-based device automation (daily/weekly)
+* Per-device scheduled tasks with background execution
 
-Add/remove users
+---
 
-Add/remove devices
+## 🖥️ User Interface
 
-View system & security logs
+* Login & dashboard
+* Device-specific control panels
+* Scheduling manager
+* Admin panels for user & device management
 
-Regular User
+---
 
-Control devices
+## 🧱 Project Structure
 
-Create and manage schedules
+```
+src/com/smarthome/
+├── SmartHomeApp.java
+├── gui/        ─ Swing GUI
+├── system/     ─ Core logic
+├── models/     ─ Devices & users
+├── interfaces/ ─ Device capabilities
+└── exceptions/ ─ Custom errors
+```
 
-Restricted from admin operations
+---
 
-💡 Supported Devices
+## 🛠️ Tech Stack
 
-Light
+* **Java**, **Java Swing**
+* OOP (Inheritance, Polymorphism, Encapsulation)
+* Singleton pattern, Timer-based scheduling
 
-On/Off control
+---
 
-Brightness adjustment
+## ▶️ Run Instructions
 
-Motion-activated lighting
+1. Open in any Java IDE
+2. Ensure **JDK 8+**
+3. Run `SmartHomeApp.java`
 
-Color selection (White, Warm White, Blue, Red)
+---
 
-Fan
+## 📚 Learning Outcomes
 
-On/Off control
+* OOP-based system design
+* Event-driven GUI programming
+* Role-based access control
+* Real-world automation modeling
 
-Speed levels (1–5)
+---
 
-Air Conditioner
+## 👥 Team
 
-Temperature control (16–30°C)
-
-Modes: Cool / Heat / Fan / Dry / Auto
-
-Energy-saving mode
-
-Auto temperature adjustment (time-based)
-
-Security System
-
-Arm / Disarm
-
-Home / Away modes
-
-Motion detection
-
-Alarm activation
-
-Security event logs
-
-🤖 Automation & Scheduling
-
-Motion-based automation (e.g., lights)
-
-Time-based automation (daily/weekly)
-
-Device-specific scheduled tasks
-
-Background scheduler executes tasks every minute
-
-🖥️ User Interface
-
-Login screen with authentication
-
-Dashboard showing all devices
-
-Device-specific control panels
-
-Scheduling manager per device
-
-Admin dialogs for user & device management
-
-Permission-aware UI components
-
-🧱 Project Structure
-src/
-└── com/smarthome/
-    ├── SmartHomeApp.java
-    ├── gui/
-    │   └── SmartHomeGUI.java
-    ├── system/
-    │   └── SmartHomeSystem.java
-    ├── models/
-    │   ├── Device.java
-    │   ├── Light.java
-    │   ├── Fan.java
-    │   ├── AirConditioner.java
-    │   ├── SecuritySystem.java
-    │   ├── ScheduledTask.java
-    │   ├── User.java
-    │   └── AdminUser.java
-    ├── interfaces/
-    │   ├── Switchable.java
-    │   └── Dimmable.java
-    └── exceptions/
-        ├── AuthenticationException.java
-        └── DeviceNotFoundException.java
-
-🛠️ Tech Stack
-
-Language: Java
-
-GUI: Java Swing
-
-Core Concepts: OOP (Inheritance, Polymorphism, Encapsulation)
-
-Design Patterns: Singleton (System Manager)
-
-Scheduling: Java Timer
-
-Architecture: Modular, MVC-like separation
-
-▶️ How to Run
-
-Clone the repository
-
-git clone <repo-url>
-
-
-Open the project in any Java IDE (IntelliJ / Eclipse / VS Code)
-
-Ensure JDK 8+ is installed
-
-Run SmartHomeApp.java
-
-Login using default admin credentials (configured in code)
-
-🧪 Example Use Cases
-
-Automatically turn on lights when motion is detected
-
-Schedule AC to turn on at 6 PM on weekdays
-
-Switch security system to Away mode when leaving home
-
-Admin dynamically adds users and devices
-
-🔧 Extensibility
-
-Add new devices by extending the Device abstract class
-
-Plug in new automation rules in SmartHomeSystem
-
-GUI dynamically adapts to new device features
-
-📚 Learning Outcomes
-
-Hands-on application of OOP concepts
-
-Event-driven GUI development
-
-Role-based access control
-
-Real-world automation system design
-
-Scalable and extensible architecture
-
-👥 Team
-
-Group 53 – OOPS Project
+**Group 53 – OOPS Project**
